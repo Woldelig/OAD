@@ -1,0 +1,9 @@
+Lillabok Viggo
+
+Abstract tablemodel:
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/table/AbstractTableModel.html
+
+Tablemodel:
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/table/TableModel.html
