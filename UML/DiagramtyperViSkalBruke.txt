@@ -1,0 +1,9 @@
+Klassediagram: AbstractTableModell s288 <- Noe alla det
+
+Klassediagram: Det vi har på tavlen i et diagram, subklasse lollipop interface
+
+Sekvensdiagram: MVC da må dette komme frem i teksten! Ellers er ikke dette relevant diagram
+
+Use case: ? er for nybegynnere
+
+tilstandsdiagram: Samme som mvc
