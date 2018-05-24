@@ -15,42 +15,44 @@
   transition: all 0.3s;
 }
 
-.blå {
-  fill: #b4c8d2;
-}
 
 .blå:hover {
   fill: #8fadbc;
-}
-
-.grønn {
-  fill: #b4e6b4;
 }
 
 .grønn:hover {
   fill: #79d279;
 }
 
-.gul {
-  fill: #faf0b4;
-}
-
 .gul:hover {
   fill: #f6e26f;
-}
-
-.rosa {
-  fill: #fabebe;
 }
 
 .rosa:hover {
   fill: #f47171;
 }
 
-.lilla {
-  fill: #e6b3ff;
-}
-
 .lilla:hover {
   fill: #d580ff;
 }
+
+/* Disse verdiene bli angitt i Visual Paradigm.
+.blå {
+  fill: #b4c8d2;
+}
+
+.grønn {
+  fill: #b4e6b4;
+}
+
+.gul {
+  fill: #faf0b4;
+}
+
+.rosa {
+  fill: #fabebe;
+}
+
+.lilla {
+  fill: #e6b3ff;
+} */
