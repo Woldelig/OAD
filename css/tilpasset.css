@@ -1,3 +1,7 @@
+.svg-container {
+  width: 100%;
+}
+
 .rundKant {
   border-radius: 5px;
 }
