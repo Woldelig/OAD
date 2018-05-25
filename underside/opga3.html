@@ -37,13 +37,13 @@
                 <a class="nav-link" href="opga0.html">Oppgave A - Introduksjon</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="opga1.html">Oppgave A - Side 1</a>
+                <a class="nav-link" href="opga1.html">Oppgave A - Side 1</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="opga2.html">Oppgave A - Side 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="opga3.html">Oppgave A - Side 3</a>
+                <a class="nav-link active" href="opga3.html">Oppgave A - Side 3</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="opgb0.html">Oppgave B - Introduksjon</a>
@@ -69,35 +69,34 @@
       </div>
       <div class="col-lg-6 offset-lg-1">
         <div class="row">
-          <h1>Oppgave A - Side 1</h1>
+          <h1>Oppgave A - Side 3</h1>
         </div>
         <br>
         <div class="row">
           <p>
-            Som allerede delvis introdusert eksisterer det i Java en abstrakt klasse ved navnet AbstractTableModel (videre forkortet ATM.). Som kjent er en abstrakt klasse ikke å regne for komplett og kan ikke instansers. Den må i stedet utvides ved hjelp av nøkkelordet «extends» i klasse-deklarasjonen, slik at det opprettes en ny klasse som arver alle ting fra superklassen, men som også har mulighet til å legge til egne artefakter.
+            Dette avsnittet tar for seg et eksempel hvor det er en spesifikk klasse, en klasse som kan få navnet TabellVerdier, som utvides fra det som da blir superklassen for TabellVerdier, AbstractModelingTable. Den utvidede klassen Tabellverdier har ansvaret over plasseringen innenfor tabellen som blir vist til brukeren via det grafiske grensesnittet. Modellen har ansvar for å hente ut dataen til tabellen fra en databasekomponent.
           </p>
           <p>
-            I AbstractTabelModel eksisterer det ni metoder, der tre av de kun er deklarerte, men altså ikke definert. For å fullføre kontrakten og skape en funksjonell klasse, må det skrives kode i de tre metodene som fremdeles betegnes som abstrakte. Dette gjøres ved å skrive en mer eller mindre kompleks form for algoritme, alt etter behovet til oppgaven som nevnte metode skal utføre.
-          </p>
-        </div>
-        <div class="row">
-          <object type="image/svg+xml" data="../diagram/AbstractTableModelForenklet.svg">
-            Nettleseren støtter ikke objekter
-          </object>
-        </div>
-        <div class="row">
-          <p>
-            I det forenklede klassediagrammet over beskrives en forkortet utgave av metodene til ATM-klassen, og man kan raskt se hvilke metoder som ikke er definert, da disse står merket i kursiv. Disse må dermed utdypes i underklasse for å gjøre klassen komplett og brukbar.
+            I utvidelsen av ATM-klassen må getRowCount(), getColumnCount() og getValueAt() inneholde kode som forventet av en metode, da de kun er deklarert, men er uten kode til å utføre noen form for oppgave. Uten å gjøre dette vil det føre til en feil under kompilering eller kjøring av programmet fordi det fremdeles eksisterer abstrakte metoder i koden, noe som verken er logisk eller tillatt.
           </p>
           <p>
-            Spesialisering, hvor det opprettes en underklasse av det som da blir en superklasse – den abstrakte klassen som utvides, kan på flere måter sammenlignes med for eksempel en prosess i et maskineri. Hvis det eksisterer en deklarert prosess, men prosessen definerer ingen konkret algoritme på å utføre en gitt oppgave, kan man planlegge og definere dette. På den måten spesialiserer man prosessen og utfyller beskrivelsen på hvordan selve oppgaven skal utføres.
+            De abstrakte prosessene, eller metoden som blir den korrekte terminologien i henhold til objekt-orientering, må inneholde en slags oppskrift for hvordan metoden skal utføres, og hva den eventuelt skal returnere tilbake til systemet som kaller på metoden, noe som kan gjøres internt i programkoden.
+          </p>
+          <p>
+            Videre kobles disse tre komponentene sammen, altså databaseklassen, den utvidede klassen, og Swing-klassen JTable. JTable er en visuell komponent som kan utnyttes for å vise data, tilfeller med store mengder data brukes også komponenten JScrollPane. JTable har den fordelen at den fungerer som en buffer for dataene, og kan populere  JScrollPane etter hvert som behovet oppstår i programmet. Dette er svært ressurssparende, og en god kodepraksis.
+          </p>
+          <p>
+            I tillegg kan man også her kan man kjenne igjen MVC-mønsteret som tidligere er omtalt.
+          </p>
+          <p>
+            For øvrig forklares den abstrakte klassen i langt mer utfyllende grad i deloppgave 2.
           </p>
         </div>
         <br>
         <br>
         <div class="clearfix">
-          <span class="float-left"><a href="opga0.html" class="btn btn-primary" role="button">Forrige</a></span>
-          <span class="float-right"><a href="opga2.html" class="btn btn-success" role="button">Neste</a></span>
+          <span class="float-left"><a href="opga2.html" class="btn btn-primary" role="button">Forrige</a></span>
+          <span class="float-right"><a href="opgb0.html" class="btn btn-success" role="button">Neste</a></span>
         </div>
         <br>
         <br>
