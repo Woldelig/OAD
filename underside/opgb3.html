@@ -31,22 +31,22 @@
                 <a class="nav-link" href="../index.html">Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram1.html">AbstractTableModel</a>
+                <a class="nav-link" href="intro2.html">Oppgavens oppbygning</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram2.html">Klassediagram til oppgave A</a>
+                <a class="nav-link" href="opgb0.html">Oppgave B - Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram3.html">Klassediagram til oppgave B</a>
+                <a class="nav-link" href="opgb1.html">Oppgave B - Side 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram4.html">Sekvensdiagram</a>
+                <a class="nav-link" href="opgb2.html">Oppgave B - Side 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="diagram5.html">Use case</a>
+                <a class="nav-link active" href="opgb3.html">Oppgave B - Side 3</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram6.html">Diagram 6</a>
+                <a class="nav-link" href="opgb4.html">Oppgave B - Side 4</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="../MEDLEMMER.html">Medlemmer</a>
@@ -57,23 +57,29 @@
       </div>
       <div class="col-lg-6 offset-lg-1">
         <div class="row">
-          <h1>Diagram 4</h1>
+          <h1>Oppgave B - Side 3</h1>
         </div>
         <br>
         <div class="row">
-          <object type="image/svg+xml" data="../diagram/Usecase.svg">
-            Nettleseren støtter ikke objekter
-          </object>
-        </div>
-        <br>
-        <div class="row">
-          <p>Tekst om diagram her</p>
+          <p>
+            DefaultTableModel gir også mulighet til å lage en TableModel som er enklere, men er ikke anbefalt, hovedsakelig fordi den allokerer plass i minnet til hver enkelt celle i tabellen.
+            Dette fører til at den er svært lite skalerbar og fleksibel som igjen gjør det vanskelig å manipulere dataen.
+          </p>
+          <p>
+            Et JTable henter kun data fra TableModel så lenge visningsområdet har nok plass.
+            Hvis tabellen har 100 rader og befinner seg i et JScrollPane hvor visningsområdet returner kun ti rader, vil tabellen kun hente ut ny informasjon fra modellen ved bruk av scroll.
+            Dette betyr at man kan vise store mengder med data uten å ha alt lastet inn i minnet på en og samme tid. Lager man en subklasse av AbstractTableModel vil klassen ha fult ansvar for å hente inn data når kontrollobjektet ber om det.
+            Dataen kan derfor ligge lagret eksternt som for eksempel i en database eller på et annet lagringsmedium.
+          </p>
+          <p>
+            I et tilfelle hvor tabellen inneholder få rader vil DefaultTableModel være raskere siden dataen er lagret i minnet.
+          </p>
         </div>
         <br>
         <br>
         <div class="clearfix">
-          <span class="float-left"><a href="diagram5.html" class="btn btn-primary" role="button">Forrige</a></span>
-          <span class="float-right"><a href="../MEDLEMMER.html" class="btn btn-success" role="button">Neste</a></span>
+          <span class="float-left"><a href="opgb2.html" class="btn btn-primary" role="button">Forrige</a></span>
+          <span class="float-right"><a href="opgb4.html" class="btn btn-success" role="button">Neste</a></span>
         </div>
         <br>
         <br>

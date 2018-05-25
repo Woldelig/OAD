@@ -31,22 +31,22 @@
                 <a class="nav-link" href="../index.html">Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">AbstractTableModel</a>
+                <a class="nav-link" href="intro2.html">Oppgavens oppbygning</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram2.html">Klassediagram til oppgave A</a>
+                <a class="nav-link" href="opgb0.html">Oppgave B - Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram3.html">Klassediagram til oppgave B</a>
+                <a class="nav-link" href="opgb1.html">Oppgave B - Side 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram4.html">Sekvensdiagram</a>
+                <a class="nav-link" href="opgb2.html">Oppgave B - Side 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram5.html">Use case</a>
+                <a class="nav-link" href="opgb3.html">Oppgave B - Side 3</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diagram6.html">Diagram 6</a>
+                <a class="nav-link active" href="opgb4.html">Oppgave B - Side 4</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="../MEDLEMMER.html">Medlemmer</a>
@@ -57,23 +57,35 @@
       </div>
       <div class="col-lg-6 offset-lg-1">
         <div class="row">
-          <h1>AbstractTableModel</h1>
+          <h1>Oppgave B - Side 4</h1>
         </div>
         <br>
         <div class="row">
-          <object type="image/svg+xml" data="../diagram/AbstractTableModel.svg">
+          <p>
+            Under er det et sekvensdiagram som tar utgangspunkt i en kunde som benytter seg av en billettautomat. MVC-mønsteret blir benyttet her.
+          </p>
+        </div>
+        <div class="row">
+          <object type="image/svg+xml" data="../diagram/Sekvensdiagram.svg">
             Nettleseren støtter ikke objekter
           </object>
         </div>
         <br>
         <div class="row">
-          <p>Tekst om diagram her</p>
+          <p>
+            Sekvensdiagrammet viser hvordan objekter snakker med hverandre og rekkefølgen på dette.
+            I diagrammet utfører kunden en bestemt handling som å sjekke kinoprogrammet for en bestemt dato.
+            Kunden opererer med billettskjermen som er brukergrensesnittet (View) for systemet. En melding om å oppdatere kinoprogrammet blir sendt videre til kontrolleren (Controller).
+            Kontrolleren behandler dette og sender så en ny melding til modellen (Model) om å få det oppdaterte innholdet.
+            Modellen oppdaterer tabellen og sender informasjonen tilbake til billettskjermen.
+            Den visuelle komponenten vil da blir separert fra dataene som modellen holder på.
+          </p>
         </div>
         <br>
         <br>
         <div class="clearfix">
-          <span class="float-left"><a href="../index.html" class="btn btn-primary" role="button">Forrige</a></span>
-          <span class="float-right"><a href="diagram2.html" class="btn btn-success" role="button">Neste</a></span>
+          <span class="float-left"><a href="opgb3.html" class="btn btn-primary" role="button">Forrige</a></span>
+          <span class="float-right"><a href="../MEDLEMMER.html" class="btn btn-success" role="button">Neste</a></span>
         </div>
         <br>
         <br>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eksamen V18 - OAD2000V</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tilpasset.css">
+  <!--[if lt IE 9]>
+  <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- Siden her -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Eksamensoppgave i OAD2000V</h1>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="row">
+          <div class="col-lg-11 offset-lg-1 bg-light border border-primary rundKant">
+            <ul class="nav nav-pills flex-column my-2">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Intro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="intro2.html">Oppgavens oppbygning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opgb0.html">Oppgave B - Intro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opgb1.html">Oppgave B - Side 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="opgb2.html">Oppgave B - Side 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opgb3.html">Oppgave B - Side 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opgb4.html">Oppgave B - Side 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="../MEDLEMMER.html">Medlemmer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-1">
+        <div class="row">
+          <h1>Oppgave B - Side 2</h1>
+        </div>
+        <br>
+        <div class="row">
+          <object type="image/svg+xml" data="../diagram/Klassediagram-B-kompleks.svg">
+            Nettleseren støtter ikke objekter
+          </object>
+        </div>
+        <br>
+        <div class="row">
+          <p>
+            Modellen har også ansvar for å returnere informasjon som dimensjonen til tabellen, datatypen til hver kolonne, kolonnetittel og om det er mulig å redigere verdien i en enkelt celle.
+            Med disse ni metodene kan interfacet virke komplekst og tidkrevende å implementere.
+            Java tilbyr DefaultTableModel som er en subklasse av AbstractTableModel hvor interfacet TableModel implementeres slik at det krever minimalt med innsats [1][2].
+          </p>
+          <p>
+            Ved å utvide klassen AbstractTableModel må man overstyre tre enkle metoder. Disse metodene gjør det mulig å returnere antall rader, antall kolonner og verdien til en spesifikk celle.
+          </p>
+          <kbd>
+            public int getRowCount(); <br>
+            public int getColumnCount(); <br>
+            public Object getValueAt(int row, int column);
+          </kbd>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <ul>
+            <li>
+              [1] - <a href="http://www.informit.com/articles/article.aspx?p=332278&seqNum=2">http://www.informit.com/articles/article.aspx?p=332278&seqNum=2</a>
+            </li>
+            <li>
+              [2] - <a href="https://www.thoughtco.com/defaulttablemodel-overview-2033890">https://www.thoughtco.com/defaulttablemodel-overview-2033890</a>
+            </li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="clearfix">
+          <span class="float-left"><a href="opgb1.html" class="btn btn-primary" role="button">Forrige</a></span>
+          <span class="float-right"><a href="opgb3.html" class="btn btn-success" role="button">Neste</a></span>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="http://iotgruppa.com/"> IoTgruppa.com</a>
+    </div>
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>
