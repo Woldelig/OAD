@@ -77,7 +77,7 @@
             Dette avsnittet tar for seg et eksempel hvor det er en spesifikk klasse, en klasse som kan få navnet TabellVerdier, som utvides fra det som da blir superklassen for TabellVerdier, AbstractModelingTable. Den utvidede klassen Tabellverdier har ansvaret over plasseringen innenfor tabellen som blir vist til brukeren via det grafiske grensesnittet. Modellen har ansvar for å hente ut dataen til tabellen fra en databasekomponent.
           </p>
           <p>
-            I utvidelsen av ATM-klassen må getRowCount(), getColumnCount() og getValueAt() inneholde kode som forventet av en metode, da de kun er deklarert, men er uten kode til å utføre noen form for oppgave. Uten å gjøre dette vil det føre til en feil under kompilering eller kjøring av programmet fordi det fremdeles eksisterer abstrakte metoder i koden, noe som verken er logisk eller tillatt.
+            I utvidelsen av ATM-klassen må <code>getRowCount()</code>, <code>getColumnCount()</code> og <code>getValueAt()</code> inneholde kode som forventet av en metode, da de kun er deklarert, men er uten kode til å utføre noen form for oppgave. Uten å gjøre dette vil det føre til en feil under kompilering eller kjøring av programmet fordi det fremdeles eksisterer abstrakte metoder i koden, noe som verken er logisk eller tillatt.
           </p>
           <p>
             De abstrakte prosessene, eller metoden som blir den korrekte terminologien i henhold til objekt-orientering, må inneholde en slags oppskrift for hvordan metoden skal utføres, og hva den eventuelt skal returnere tilbake til systemet som kaller på metoden, noe som kan gjøres internt i programkoden.
