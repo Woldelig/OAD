@@ -75,20 +75,20 @@
         <br>
         <div class="row">
           <p>
-            Interfacet Serializable konverterer et objekt til å bli serialiserbart [1][2].
-            Dette innebærer at objektet enkelt kan bli brukt til lagring eller strømmes over en nettverksforbindelse.
-            I fremtidige utgaver av Swing vil ikke serialiserbare objekter av klassen AbstractTableModel ikke lengre støttes.
+            Interfacet Serializable konverterer et objekt til å bli serialiserbart.
+            Dette innebærer at objektet enkelt kan bli brukt til lagring eller strømmes over en nettverksforbindelse  [1][2].
+            I fremtidige utgaver av Swing vil ikke serialiserbare objekter av klassen AbstractTableModel ikke lengre støttes [3].
           </p>
           <p>
-            Interfacet TableModel inneholder ni ulike metoder for å kunne manipulere og spesifisere dataen i en tabell [3].
+            Interfacet TableModel inneholder ni ulike metoder for å kunne manipulere og spesifisere dataen i en tabell [4].
             Et eksempel på en tabell er JTable. Slik som alle andre Swing-komponenter er JTable utformet rundt mønsteret MVC.
-            Dette gjør det mulig å separere den visuelle komponenten fra dataene i tabellen som igjen øker fleksibilitet og innkapsling [4].
+            Dette gjør det mulig å separere den visuelle komponenten fra dataene i tabellen som igjen øker fleksibilitet og innkapsling [5].
           </p>
         </div>
         <br>
         <br>
         <div class="row">
-          <ul>
+          <ul class="minListe">
             <li>
               [1] - <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html</a>
             </li>
@@ -96,10 +96,13 @@
               [2] - <a href="https://stackoverflow.com/questions/447898/what-is-object-serialization">https://stackoverflow.com/questions/447898/what-is-object-serialization</a>
             </li>
             <li>
-              [3] - <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableModel.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableModel.html</a>
+              [3] - <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/AbstractTableModel.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/table/AbstractTableModel.html</a>
             </li>
             <li>
-              [4] - <a href="https://stackoverflow.com/questions/16046166/why-do-we-have-to-use-a-tablemodel-for-a-jtable">https://stackoverflow.com/questions/16046166/why-do-we-have-to-use-a-tablemodel-for-a-jtable</a>
+              [4] - <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableModel.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableModel.html</a>
+            </li>
+            <li>
+              [5] - <a href="https://stackoverflow.com/questions/16046166/why-do-we-have-to-use-a-tablemodel-for-a-jtable">https://stackoverflow.com/questions/16046166/why-do-we-have-to-use-a-tablemodel-for-a-jtable</a>
             </li>
           </ul>
         </div>
